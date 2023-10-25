@@ -1,0 +1,57 @@
+/* Estilos base (para telas maiores) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para telas menores (máximo de 900px) */
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 14px; /* Reduz a fonte base para telas menores */
+    }
+    #menu-toggle {
+        display: block;
+    }
+    #menu-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        width: 70%;
+        padding: 20px;
+    }
+    #menu-content ul {
+        list-style: none;
+        padding: 0;
+    }
+    #menu-content li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para botões (responsivo) */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para campos de entrada (responsivo) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%; /* Sempre 100% da largura, independentemente do tamanho da tela */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}s

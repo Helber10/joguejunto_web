@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogueJunto - Organize Partidas</title>
+    <!-- Adicione os links para seus arquivos CSS e scripts JavaScript aqui -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <!-- Menu fixo antes do login -->
+    <div id="menu">
+        <div id="menu-toggle">☰</div>
+        <div id="menu-content">
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tela Inicial -->
+    <div id="tela-inicial">
+        <h1>Bem-vindo ao JogueJunto</h1>
+        <p>Organize partidas de vôlei e tênis de mesa com facilidade!</p>
+    </div>
+
+    <!-- Tela de Login -->
+    <div id="tela-login">
+        <h2>Login</h2>
+        <form>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <a href="#">Não tem uma conta? Cadastre-se</a>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Tela de Cadastro -->
+    <div id="tela-cadastro">
+        <h2>Cadastro</h2>
+        <form>
+            <input type="text" id="nome" placeholder="Nome Completo" required>
+            <input type="date" id="data-nascimento" placeholder="Data de Nascimento" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <input type="password" id="confirmar-senha" placeholder="Confirmar Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Tela de Escolha do Esporte -->
+    <div id="tela-escolha-esporte">
+        <h2>Escolha o Esporte</h2>
+        <div id="esportes">
+            <div class="esporte">
+                <img src="volleyball.png" alt="Vôlei">
+                <button>Vôlei</button>
+            </div>
+            <div class="esporte">
+                <img src="table-tennis.png" alt="Tênis de Mesa">
+                <button>Tênis de Mesa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Organização de Partidas de Vôlei -->
+    <div id="tela-organizar-volei">
+        <h2>Organizar Partida de Vôlei</h2>
+        <form>
+            <input type="text" id="nome-partida" placeholder="Nome da Partida" required>
+            <input type="text" id="regras-volei" placeholder="Regras Específicas" required>
+            <input type="number" id="num-jogadores-volei" placeholder="Número de Jogadores" required>
+            <input type="date" id="data-volei" placeholder="Data" required>
+            <input type="time" id="hora-volei" placeholder="Hora" required>
+            <input type="text" id="local-volei" placeholder="Local" required>
+            <button type="submit">Organizar Partida</button>
+        </form>
+    </div>
+
+    <!-- Tela de Organização de Partidas de Tênis de Mesa -->
+    <div id="tela-organizar-tenis-mesa">
+        <h2>Organizar Partida de Tênis de Mesa</h2>
+        <form>
+            <input type="text" id="nome-partida-tenis-mesa" placeholder="Nome da Partida" required>
+            <input type="text" id="estilo-jogo-tenis-mesa" placeholder="Estilo de Jogo" required>
+            <input type="number" id="num-jogadores-tenis-mesa" placeholder="Número de Jogadores" required>
+            <input type="date" id="data-tenis-mesa" placeholder="Data" required>
+            <input type="time" id="hora-tenis-mesa" placeholder="Hora" required>
+            <input type="text" id="local-tenis-mesa" placeholder="Local" required>
+            <button type="submit">Organizar Partida</button>
+        </form>
+    </div>
+
+    <!-- Adicione links para seus arquivos JavaScript aqui -->
+
+</body>
+</html>
