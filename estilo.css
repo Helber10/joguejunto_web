@@ -1,16 +1,18 @@
 /* Estilos base (para telas maiores) */
 
 
+@import url('https://fonts.googleapis.com/css2? family= Edu+TAS+Beginner:wght@400;500;600 & family= Oswald & display=swap');
+
 html{
-background-color: #EEE8AA;
+background-color: #FAFAD2;
 }
 
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilos para telas menores (máximo de 900px) */
@@ -40,14 +42,6 @@ body {
 }
 
 /* Estilos para botões (responsivo) */
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 /*-----tela de login ----*/
 
@@ -69,7 +63,7 @@ button {
 .tela-login button {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 130px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -160,7 +154,7 @@ button {
   margin-bottom: 5vh;
 }
 .organizar-volei input {
-  background-color: red;
+  background-color: none;
   width: 40vh;
   padding: 10px;
   margin: 5px 0;
@@ -200,7 +194,7 @@ button {
   margin-bottom: 5vh;
 }
 .organizar-tenis input {
-  background-color: red;
+  background-color:none;
   width: 40vh;
   padding: 10px;
   margin: 5px 0;
