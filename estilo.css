@@ -1,57 +1,294 @@
 /* Estilos base (para telas maiores) */
+
+
+html{
+background-color: #EEE8AA;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos para telas menores (máximo de 900px) */
 @media only screen and (max-width: 900px) {
-    body {
-        font-size: 14px; /* Reduz a fonte base para telas menores */
-    }
-    #menu-toggle {
-        display: block;
-    }
-    #menu-content {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #333;
-        width: 70%;
-        padding: 20px;
-    }
-    #menu-content ul {
-        list-style: none;
-        padding: 0;
-    }
-    #menu-content li {
-        margin-bottom: 10px;
-    }
+  body {
+    font-size: 14px; /* Reduz a fonte base para telas menores */
+  }
+  #menu-toggle {
+    display: block;
+  }
+  #menu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 70%;
+    padding: 20px;
+  }
+  #menu-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  #menu-content li {
+    margin-bottom: 10px;
+  }
 }
 
 /* Estilos para botões (responsivo) */
 button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Estilos para campos de entrada (responsivo) */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-input[type="time"],
+/*-----tela de login ----*/
+
+.tela-login form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+.tela-login input {
+  width: 40vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-bottom: 2vh;
+}
+.tela-login button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35vh;
+  margin-left: 2%;
+}
+.tela-login a{
+    margin-left: 2%;
+    margin-bottom: 1vh;
+}
+/*-----fim ----*/
+
+/* ------cadastro------------ */
+.cadastro{
+    background-color;
+    width: 25%;
+    margin-left: 1%;
+}
+
+
+.cadastro form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+.cadastro input {
+  width: 50vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-bottom: 2vh;
+  flex-direction: column;
+  align-items: center;
+}
+.cadastro button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35vh;
+  margin-left: 10%;
+}
+
+/*-----fim ----*/
+
+
+
+
+
+/* ------Escolha-espoter------------ */
+
+.esporte img{
+    width: 10vh;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-bottom: -2vh;
+
+
+}
+
+.esporte button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  
+}
+ 
+/*----------fim---------------*/
+
+
+
+/* ------Organização de Partidas de Vôlei ----------- */
+
+
+.organizar-volei form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+.organizar-volei input {
+  background-color: red;
+  width: 40vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-bottom: 2vh;
+}
+.organizar-volei button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35vh;
+  margin-left: 2%;
+}
+.tela-login a{
+    margin-left: 2%;
+    margin-bottom: 1vh;
+}
+
+
+
+/*----------fim---------- ----*/
+
+
+
+/* ------Organização de Partidas de Tênis de Mesa ----------- */
+
+
+.organizar-tenis form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+.organizar-tenis input {
+  background-color: red;
+  width: 40vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-bottom: 2vh;
+}
+.organizar-tenis button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35vh;
+  margin-left: 4%;
+}
+.tela-login a{
+    margin-left: 2%;
+    margin-bottom: 1vh;
+}
+
+
+
+
+/*----------fim---------- ----*/
+
+
+
+/* ------cadastro------------ */
+
+/*----------fim---------- ----*/
+
+
+
+/* ------cadastro------------ */
+
+/*----------fim---------- ----*/
+
+
+/* ------cadastro------------ */
+
+/*----------fim---------- ----*/
+
+
+/*---------
+
+input[type="text"] {
+  width: 50vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
+input[type="email"] {
+  width: 40vh;
+  padding: 2px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+*/
+/*
+input[type="password"] {
+  width: 40vh; /* Sempre 100% da largura, independentemente do tamanho da tela 
+  padding: 2px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+input[type="time"] {
+  width: 100%; /* Sempre 100% da largura, independentemente do tamanho da tela 
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 input[type="number"] {
-    width: 100%; /* Sempre 100% da largura, independentemente do tamanho da tela */
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}s
+  width: 100%; /* Sempre 100% da largura, independentemente do tamanho da tela 
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+*/
