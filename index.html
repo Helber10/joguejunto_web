@@ -6,20 +6,25 @@
     <title>JogueJunto - Organize Partidas</title>
     <!-- Adicione os links para seus arquivos CSS e scripts JavaScript aqui -->
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="java funçoes/funcoes.js"></script>
 </head>
 <body>
     <!-- Menu fixo antes do login -->
-    <div id="menu">
-        <div id="menu-toggle">☰</div>
-        <div id="menu-content">
-            <ul>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Cadastro</a></li>
-            </ul>
-        </div>
-    </div>
 
+    <header id="header-menu">
+        <nav id="nav">
+            <button id="btn-menu" onclick="toggleMenu()">
+                Menu
+                <span id="hang"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="/">CADASTRO</a></li>
+                <li><a href="/">LOGIN</a></li>
+                <li><a href="/">HISTORIA</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- Tela Inicial -->
     <div id="tela-inicial">
         <h1>Bem-vindo ao JogueJunto</h1>

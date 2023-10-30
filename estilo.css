@@ -16,30 +16,162 @@ body {
 }
 
 /* Estilos para telas menores (máximo de 900px) */
-@media only screen and (max-width: 900px) {
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 1%;
+  left: 5px;
+  right: 0%;
+  width: 100%;
+  height: 10vh;
+  background-color: none;
+  position: fixed;
+  z-index: 10000;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header-menu {
+  background-color: #007bff;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 10px;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+#menu {
+  padding-top: 0%;
+  padding: 40%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+
+}
+
+#menu li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: red;
+  padding: 0.5rem;
+}
+
+#btn-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
   body {
-    font-size: 14px; /* Reduz a fonte base para telas menores */
+    font-size: 14px;
+    /* Reduz a fonte base para telas menores */
   }
-  #menu-toggle {
+
+  #menu {
+    display: flex;
+    position: relative;
+    padding: 0%;
+    width: 100%;
+    top: 30px;
+    right: 0px;
+    height: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    max-height: 100%;
+
+  }
+
+  #nav.active #menu {
+    display: flex;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: none;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-menu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    z-index: 1001;
+  }
+
+  #hang {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hang::after,
+  #hang::before {
+    content: '';
     display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
   }
-  #menu-content {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    width: 70%;
-    padding: 20px;
+
+  #nav.active #hang {
+    border-top-color: transparent;
   }
-  #menu-content ul {
-    list-style: none;
-    padding: 0;
+
+  #nav.active #hang::before {
+    transform: rotate(135deg);
   }
-  #menu-content li {
-    margin-bottom: 10px;
+
+  #nav.active #hang::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
+
+/*-------------------------------------------*/
+    /*-- Tela Inicial -----*/
+
+
+    #tela-inicial{
+      margin-top: 1vh;
+      background-color: #007bff;
+    }
+
 
 /* Estilos para botões (responsivo) */
 
@@ -78,7 +210,6 @@ body {
 
 /* ------cadastro------------ */
 .cadastro{
-    background-color;
     width: 25%;
     margin-left: 1%;
 }
@@ -144,7 +275,7 @@ body {
 
 
 
-/* ------Organização de Partidas de Vôlei ----------- */
+/* -----Organização de Partidas de Vôlei ---- */
 
 
 .organizar-volei form {
