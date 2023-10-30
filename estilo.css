@@ -22,13 +22,12 @@ ul {
 }
 
 #nav {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
-  top: 1%;
-  left: 5px;
-  right: 0%;
-  width: 100%;
+  top: 1vh;
+  left: 30px;
+  width: 10vh;
   height: 10vh;
   background-color: none;
   position: fixed;
@@ -96,15 +95,14 @@ a:hover {
     display: flex;
     position: relative;
     padding: 0%;
-    width: 100%;
-    top: 30px;
+    width: 10%;
+    top: 3px;
     right: 0px;
     height: 0px;
     transition: 0.6s;
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
-    max-height: 100%;
 
   }
 
@@ -113,6 +111,16 @@ a:hover {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: none;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      left: 120px;
+      width: 1000vh;
+      height: 10vh;
+      margin-top: 4vh;
+      background-color: none;
+      position: fixed;
+      z-index: 10000;
   }
 
   #menu a {
@@ -168,8 +176,7 @@ a:hover {
 
 
     #tela-inicial{
-      margin-top: 1vh;
-      background-color: #007bff;
+      margin-top: 1vh;;
     }
 
 
@@ -192,15 +199,20 @@ a:hover {
   margin-left: 2%;
   margin-bottom: 2vh;
 }
-.tela-login button {
+button[type="button"] {
   background-color: #007bff;
-  color: #fff;
-  padding: 8px 130px;
+  color: #def7f4;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  padding: 8px 10px;
   width: 35vh;
+  border-radius: 5px;
+  margin-top: 1vh;
+  align-items: center;
   margin-left: 2%;
+  margin-top: 3vh;
+  text-align: center;
+
 }
 .tela-login a{
     margin-left: 2%;
