@@ -12,11 +12,21 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0;
+}
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+    /* Reduz a fonte base para telas menores */
+  }
+  ::selection{
+    padding: 20vh 0 0 20vh;
+  }
 }
 section{
-   padding: 20px 0 0  5%;
-   margin-bottom: 2vh;
+   padding: 2vh 0 0  12vh;
+   position: flex;
+
 
 }
 
@@ -69,7 +79,7 @@ ul {
    color: aliceblue;
    text-decoration: none;
    font-size: 20px;
-   padding: 20px 4%;
+   padding: 15px 4%;
    display: flex;
    margin-bottom: 20px;
    line-height: 40px;
@@ -129,8 +139,8 @@ a:hover {
 #header-menu {
   background-color: #007bff;
   box-sizing: border-box;
-  height: 70px;
-  padding: 10px;
+  height: 7px;
+  padding: 20px 0 0 5%;
   display: block;
   align-items: center;
   justify-content: space-between;
@@ -162,11 +172,6 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 900px) {
-  body {
-    font-size: 14px;
-    /* Reduz a fonte base para telas menores */
-  }
 
   #menu {
     display: flex;
@@ -246,7 +251,7 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
-}
+
 
 /*-------------------------------------------*/
     /*-- Tela Inicial -----*/
