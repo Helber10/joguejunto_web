@@ -14,12 +14,89 @@ body {
     margin: 0;
     padding: 0;
 }
+section{
+   padding: 20px 0 0  5%;
+   margin-bottom: 2vh;
+
+}
 
 /* Estilos para telas menores (máximo de 900px) */
 ul {
   margin: 0px;
   padding: 0px;
 }
+
+
+/*==========menu lateral================*/
+ nav.menu-lateral {
+   width: 40px;
+   height: 100%;
+   background-color: rgb(255, 111, 0);
+   padding: 40px 0 40px 1%;
+   box-shadow: 3px 0 0 #1b0f0f;
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+   transition: .2S;
+
+
+ }
+
+ nav.menu-lateral:hover {
+   width: 300px;
+
+ }
+
+ .btn-expadir {
+   width: 100%;
+   padding-left: 10px;
+ }
+
+ .btn-expadir>i {
+   color: rgb(166, 49, 17);
+   font-size: 24px;
+   cursor: pointer;
+ }
+
+ ul {
+   height: 100%;
+   list-style-type: none;
+ }
+
+ ul li.item-menu a {
+   color: aliceblue;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px 4%;
+   display: flex;
+   margin-bottom: 20px;
+   line-height: 40px;
+ }
+
+ ul li.item-menu a .txt-link {
+   margin-left: 20px;
+
+ }
+
+ ul li.item-menu a .icon>i {
+   font-size: 30px;
+
+ }
+
+ ul li.item-menu:hover {
+   background: rgba(127, 91, 91, 0.415);
+ }
+
+ ul li.item-menu {
+   transition: .2s;
+ }
+
+
+
+
+/*===========fim===============*/
 
 #nav {
   display: block;
@@ -176,7 +253,7 @@ a:hover {
 
 
     #tela-inicial{
-      margin-top: 1vh;;
+      
     }
 
 
@@ -196,7 +273,6 @@ a:hover {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 2%;
   margin-bottom: 2vh;
 }
 button[type="button"] {
@@ -204,18 +280,16 @@ button[type="button"] {
   color: #def7f4;
   border: none;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 8px 10px ;
   width: 35vh;
   border-radius: 5px;
   margin-top: 1vh;
   align-items: center;
-  margin-left: 2%;
-  margin-top: 3vh;
   text-align: center;
+  margin-left: 2%;
 
 }
 .tela-login a{
-    margin-left: 2%;
     margin-bottom: 1vh;
 }
 /*-----fim ----*/
@@ -223,7 +297,7 @@ button[type="button"] {
 /* ------cadastro------------ */
 .cadastro{
     width: 25%;
-    margin-left: 1%;
+
 }
 
 
@@ -239,7 +313,6 @@ button[type="button"] {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 2%;
   margin-bottom: 2vh;
   flex-direction: column;
   align-items: center;
@@ -266,7 +339,6 @@ button[type="button"] {
 .esporte img{
     width: 10vh;
     border-radius: 10px;
-    margin-left: 2%;
     margin-bottom: -2vh;
 
 
@@ -303,7 +375,6 @@ button[type="button"] {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 2%;
   margin-bottom: 2vh;
 }
 .organizar-volei button {
@@ -317,7 +388,6 @@ button[type="button"] {
   margin-left: 2%;
 }
 .tela-login a{
-    margin-left: 2%;
     margin-bottom: 1vh;
 }
 
@@ -343,7 +413,6 @@ button[type="button"] {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 2%;
   margin-bottom: 2vh;
 }
 .organizar-tenis button {
@@ -354,10 +423,9 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   width: 35vh;
-  margin-left: 4%;
+  margin-left: 2%;
 }
 .tela-login a{
-    margin-left: 2%;
     margin-bottom: 1vh;
 }
 
