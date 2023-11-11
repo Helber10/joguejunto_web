@@ -22,3 +22,8 @@ function tipoLogin() {
     alert("Você não Esta logado");
   }
 }
+//fim///
+
+ // validar cadastro//
+
+ 

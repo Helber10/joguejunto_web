@@ -21,9 +21,7 @@ body {
     /* Reduz a fonte base para telas menores */
   }
 
-  ::selection {
-    padding: 20vh 0 0 20vh;
-  }
+
 }
 
 section {
@@ -140,7 +138,7 @@ a:hover {
 }
 
 #header-menu {
-  background-color: #007bff;
+  background-color: #ff4d00;
   box-sizing: border-box;
   height: 2vh;
   padding: 20px 0 0 5%;
@@ -263,13 +261,15 @@ h2 {
 
 
 
-/*-----tela de login ----*/
-h1{
+/*-----tela Texto ----*/
+h1 {
   font-size: 4vh;
 }
-p{
+
+p {
   margin-left: 3vh;
 }
+
 #tela-inicial {
   margin: 0 auto;
   display: flex;
@@ -362,7 +362,7 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-left:7vh ;
+  margin-left: 7vh;
 }
 
 /*-------------------fim------------------------------ ----*/
@@ -382,6 +382,7 @@ button[type="button"] {
   padding: 2vh 0 0 3vh;
   margin-top: 10vh;
 
+
 }
 
 .esporte img {
@@ -394,27 +395,29 @@ button[type="button"] {
 
 #esporte-volei button {
   background-color: #007bff;
-  color: #fff;
-  padding: 10px 2px;
+  color: #121111;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-bottom: 2vh;
+  height: 30vh;
+  padding: 20vh 0 0 10vh;
+  margin-bottom: 8vh;
   background-image: url(/joguejunto_web/img/volei.webp);
-
+  background-size: cover;
 }
 
 
 #esporte-tenis button {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 2px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-bottom: 2vh;
+  height: 30vh;
+  padding: 20vh 0 0 10vh;
+  margin-bottom: 5vh;
   background-image: url(/joguejunto_web/img/tenis.jpg);
 
 }
@@ -444,6 +447,7 @@ button[type="button"] {
 }
 
 .organizar-volei input {
+  background-color: none;
   width: 40vh;
   padding: 10px;
   margin: 5px 0;
@@ -460,7 +464,7 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-left: 5vh;
+  margin-left: 7vh;
 }
 
 
@@ -506,34 +510,18 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-left: 5vh;
-}
-
-.tela-login a {
-  margin-bottom: 1vh;
+  margin-left: 7vh;
 }
 
 
 
 
-/*----------fim---------- ----*/
-
-
-
-/* ------cadastro------------ */
 
 /*----------fim---------- ----*/
 
 
 
-/* ------cadastro------------ */
 
-/*----------fim---------- ----*/
-
-
-/* ------cadastro------------ */
-
-/*----------fim---------- ----*/
 
 
 /*---------
