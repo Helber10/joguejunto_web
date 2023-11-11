@@ -3,29 +3,32 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Edu+TAS+Beginner:wght@400;500;600 & family= Oswald & display=swap');
 
-html{
-background-color: #FAFAD2;
+html {
+  background-color: #FAFAD2;
 }
 
 
 body {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0 0 0 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 0 0;
 }
+
 @media (max-width: 900px) {
   body {
     font-size: 14px;
     /* Reduz a fonte base para telas menores */
   }
-  ::selection{
+
+  ::selection {
     padding: 20vh 0 0 20vh;
   }
 }
-section{
-   padding: 2vh 0 0  12vh;
-   position: flex;
+
+section {
+  padding: 2vh 0 0 12vh;
+  position: flex;
 
 
 }
@@ -38,70 +41,70 @@ ul {
 
 
 /*==========menu lateral================*/
- nav.menu-lateral {
-   width: 40px;
-   height: 100%;
-   background-color: rgb(255, 111, 0);
-   padding: 40px 0 40px 1%;
-   box-shadow: 3px 0 0 #1b0f0f;
+nav.menu-lateral {
+  width: 5vh;
+  height: 100%;
+  background-color: rgb(255, 111, 0);
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #1b0f0f;
 
-   position: fixed;
-   top: 0;
-   left: 0;
-   overflow: hidden;
-   transition: .2S;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .2S;
 
 
- }
+}
 
- nav.menu-lateral:hover {
-   width: 300px;
+nav.menu-lateral:hover {
+  width: 300px;
 
- }
+}
 
- .btn-expadir {
-   width: 100%;
-   padding-left: 10px;
- }
+.btn-expadir {
+  width: 100%;
+  padding-left: 10px;
+}
 
- .btn-expadir>i {
-   color: rgb(166, 49, 17);
-   font-size: 24px;
-   cursor: pointer;
- }
+.btn-expadir>i {
+  color: rgb(166, 49, 17);
+  font-size: 24px;
+  cursor: pointer;
+}
 
- ul {
-   height: 100%;
-   list-style-type: none;
- }
+ul {
+  height: 100%;
+  list-style-type: none;
+}
 
- ul li.item-menu a {
-   color: aliceblue;
-   text-decoration: none;
-   font-size: 20px;
-   padding: 15px 4%;
-   display: flex;
-   margin-bottom: 20px;
-   line-height: 40px;
- }
+ul li.item-menu a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
 
- ul li.item-menu a .txt-link {
-   margin-left: 20px;
+ul li.item-menu a .txt-link {
+  margin-left: 20px;
 
- }
+}
 
- ul li.item-menu a .icon>i {
-   font-size: 30px;
+ul li.item-menu a .icon>i {
+  font-size: 30px;
 
- }
+}
 
- ul li.item-menu:hover {
-   background: rgba(127, 91, 91, 0.415);
- }
+ul li.item-menu:hover {
+  background: rgba(127, 91, 91, 0.415);
+}
 
- ul li.item-menu {
-   transition: .2s;
- }
+ul li.item-menu {
+  transition: .2s;
+}
 
 
 
@@ -139,7 +142,7 @@ a:hover {
 #header-menu {
   background-color: #007bff;
   box-sizing: border-box;
-  height: 7px;
+  height: 2vh;
   padding: 20px 0 0 5%;
   display: block;
   align-items: center;
@@ -173,98 +176,117 @@ a:hover {
 }
 
 
-  #menu {
-    display: flex;
-    position: relative;
-    padding: 0%;
-    width: 10%;
-    top: 3px;
-    right: 0px;
-    height: 0px;
-    transition: 0.6s;
-    z-index: 1000;
-    visibility: hidden;
-    overflow-y: hidden;
+#menu {
+  display: flex;
+  position: relative;
+  padding: 0%;
+  width: 10%;
+  top: 3px;
+  right: 0px;
+  height: 0px;
+  transition: 0.6s;
+  z-index: 1000;
+  visibility: hidden;
+  overflow-y: hidden;
 
-  }
+}
 
-  #nav.active #menu {
-    display: flex;
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: none;
-      display: block;
-      justify-content: space-between;
-      align-items: center;
-      left: 120px;
-      width: 1000vh;
-      height: 10vh;
-      margin-top: 4vh;
-      background-color: none;
-      position: fixed;
-      z-index: 10000;
-  }
+#nav.active #menu {
+  display: flex;
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: none;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  left: 120px;
+  width: 1000vh;
+  height: 10vh;
+  margin-top: 4vh;
+  background-color: none;
+  position: fixed;
+  z-index: 10000;
+}
 
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  }
+#menu a {
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
 
-  #btn-menu {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-    z-index: 1001;
-  }
+#btn-menu {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+  z-index: 1001;
+}
 
-  #hang {
-    border-top: 2px solid;
-    width: 20px;
-  }
+#hang {
+  border-top: 2px solid;
+  width: 20px;
+}
 
-  #hang::after,
-  #hang::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
+#hang::after,
+#hang::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
 
-  #nav.active #hang {
-    border-top-color: transparent;
-  }
+#nav.active #hang {
+  border-top-color: transparent;
+}
 
-  #nav.active #hang::before {
-    transform: rotate(135deg);
-  }
+#nav.active #hang::before {
+  transform: rotate(135deg);
+}
 
-  #nav.active #hang::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
+#nav.active #hang::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
 
 
 /*-------------------------------------------*/
-    /*-- Tela Inicial -----*/
+h2 {
+  font-size: 4vh;
+}
 
 
-    #tela-inicial{
-      
-    }
-
-
-/* Estilos para botões (responsivo) */
 
 /*-----tela de login ----*/
+h1{
+  font-size: 4vh;
+}
+p{
+  margin-left: 3vh;
+}
+#tela-inicial {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+
+}
+
+.tela-login {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+
+}
 
 .tela-login form {
   margin: 0 auto;
@@ -272,6 +294,7 @@ a:hover {
   flex-direction: column;
   margin-bottom: 5vh;
 }
+
 .tela-login input {
   width: 40vh;
   padding: 10px;
@@ -280,31 +303,38 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 2vh;
 }
+
 button[type="button"] {
   background-color: #007bff;
   color: #def7f4;
   border: none;
   cursor: pointer;
-  padding: 8px 10px ;
+  padding: 8px 10px;
   width: 35vh;
   border-radius: 5px;
   margin-top: 1vh;
   align-items: center;
   text-align: center;
-  margin-left: 2%;
+  margin-left: 4vh;
 
 }
-.tela-login a{
-    margin-bottom: 1vh;
-}
-/*-----fim ----*/
+
+
+
+/*----------------------fim--------------------- ----*/
 
 /* ------cadastro------------ */
-.cadastro{
-    width: 25%;
+
+
+.cadastro {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+  margin-top: 10vh;
 
 }
-
 
 .cadastro form {
   margin: 0 auto;
@@ -312,8 +342,9 @@ button[type="button"] {
   flex-direction: column;
   margin-bottom: 5vh;
 }
+
 .cadastro input {
-  width: 50vh;
+  width: 40vh;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
@@ -322,6 +353,7 @@ button[type="button"] {
   flex-direction: column;
   align-items: center;
 }
+
 .cadastro button {
   background-color: #007bff;
   color: #fff;
@@ -329,11 +361,11 @@ button[type="button"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 35vh;
-  margin-left: 10%;
+  width: 30vh;
+  margin-left:7vh ;
 }
 
-/*-----fim ----*/
+/*-------------------fim------------------------------ ----*/
 
 
 
@@ -341,31 +373,68 @@ button[type="button"] {
 
 /* ------Escolha-espoter------------ */
 
-.esporte img{
-    width: 10vh;
-    border-radius: 10px;
-    margin-bottom: -2vh;
+
+.esporte {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+  margin-top: 10vh;
+
+}
+
+.esporte img {
+  width: 10vh;
+  border-radius: 10px;
+  margin-bottom: -2vh;
 
 
 }
 
-.esporte button {
+#esporte-volei button {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 2px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  
+  margin-bottom: 2vh;
+  background-image: url(/joguejunto_web/img/volei.webp);
+
 }
- 
-/*----------fim---------------*/
+
+
+#esporte-tenis button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  margin-bottom: 2vh;
+  background-image: url(/joguejunto_web/img/tenis.jpg);
+
+}
+
+/*---------------------------fim-----------------------------------*/
 
 
 
 /* -----Organização de Partidas de Vôlei ---- */
 
+
+
+.organizar-volei {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+
+}
 
 .organizar-volei form {
   margin: 0 auto;
@@ -373,8 +442,8 @@ button[type="button"] {
   flex-direction: column;
   margin-bottom: 5vh;
 }
+
 .organizar-volei input {
-  background-color: none;
   width: 40vh;
   padding: 10px;
   margin: 5px 0;
@@ -382,6 +451,7 @@ button[type="button"] {
   border-radius: 5px;
   margin-bottom: 2vh;
 }
+
 .organizar-volei button {
   background-color: #007bff;
   color: #fff;
@@ -389,11 +459,8 @@ button[type="button"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 35vh;
-  margin-left: 2%;
-}
-.tela-login a{
-    margin-bottom: 1vh;
+  width: 30vh;
+  margin-left: 5vh;
 }
 
 
@@ -404,6 +471,15 @@ button[type="button"] {
 
 /* ------Organização de Partidas de Tênis de Mesa ----------- */
 
+.organizar-tenis {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+
+}
+
 
 .organizar-tenis form {
   margin: 0 auto;
@@ -411,8 +487,9 @@ button[type="button"] {
   flex-direction: column;
   margin-bottom: 5vh;
 }
+
 .organizar-tenis input {
-  background-color:none;
+  background-color: none;
   width: 40vh;
   padding: 10px;
   margin: 5px 0;
@@ -420,6 +497,7 @@ button[type="button"] {
   border-radius: 5px;
   margin-bottom: 2vh;
 }
+
 .organizar-tenis button {
   background-color: #007bff;
   color: #fff;
@@ -427,11 +505,12 @@ button[type="button"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 35vh;
-  margin-left: 2%;
+  width: 30vh;
+  margin-left: 5vh;
 }
-.tela-login a{
-    margin-bottom: 1vh;
+
+.tela-login a {
+  margin-bottom: 1vh;
 }
 
 

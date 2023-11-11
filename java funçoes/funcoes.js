@@ -16,7 +16,8 @@ function tipoLogin() {
   const password = document.getElementById("password").value;
 
   if (username === "@email" && password === "1234") {
-    window.location.href = "esporte.html";
+    window.location.href = "escolhaesporte.html";
+     alert("Você Esta logado");
   } else {
     alert("Você não Esta logado");
   }
