@@ -1,41 +1,36 @@
-/* Estilos base (para telas maiores) */
 
-
-@import url('https://fonts.googleapis.com/css2? family= Edu+TAS+Beginner:wght@400;500;600 & family= Oswald & display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 html {
   background-color: #FAFAD2;
 }
 
-
-body {
-  font-family: 'Oswald', sans-serif;
+* Estilos padrão para telas maiores */ body {
   font-size: 16px;
-  margin: 0;
-  padding: 0 0 0 0;
 }
 
-@media (max-width: 900px) {
+/* Estilos para telas menores, como tablets */
+@media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
-    /* Reduz a fonte base para telas menores */
   }
-
-
 }
 
-section {
-  padding: 2vh 0 0 12vh;
-  position: flex;
-
-
+/* Estilos para telas ainda menores, como smartphones */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
 
-/* Estilos para telas menores (máximo de 900px) */
-ul {
-  margin: 0px;
-  padding: 0px;
+
+
+
+main {
+  display: ;
+  flex-wrap: wrap;
 }
+
 
 
 /*==========menu lateral================*/
@@ -255,19 +250,14 @@ a:hover {
 
 
 /*-------------------------------------------*/
-h2 {
-  font-size: 4vh;
-}
 
 
 
 /*-----tela Texto ----*/
-h1 {
-  font-size: 4vh;
-}
 
-p {
-  margin-left: 3vh;
+
+a{
+  margin-left: 2vh;
 }
 
 #tela-inicial {
@@ -276,6 +266,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 2vh 0 0 3vh;
+  flex-wrap: wrap;
 
 }
 
@@ -285,6 +276,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 2vh 0 0 3vh;
+  flex-wrap: wrap;
 
 }
 
@@ -332,7 +324,7 @@ button[type="button"] {
   flex-direction: column;
   align-items: center;
   padding: 2vh 0 0 3vh;
-  margin-top: 10vh;
+  margin-top: 1vh;
 
 }
 
