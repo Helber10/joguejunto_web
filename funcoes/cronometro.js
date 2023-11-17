@@ -16,6 +16,7 @@ startBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resumeBtn.addEventListener("click", resumeTimer);
 resetBtn.addEventListener("click", resetTimer);
+
 function startTimer() {
   interval = setInterval(() => {
     if (!isPaused) {
