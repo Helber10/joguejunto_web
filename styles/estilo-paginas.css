@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Oswald&display=swap');
+
+html {
+  background-color: #FAFAD2;
+}
+
+* {
+  font-family: "Orbitron", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para telas menores, como tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para telas ainda menores, como smartphones */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+
+  }
+
+}
+
+
+
+
+/*==========menu lateral================*/
+nav.menu-lateral {
+  width: 50px;
+  height: 100%;
+  background-color: rgb(255, 111, 0);
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #988c05;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .4S;
+
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir>i {
+  color: rgb(166, 49, 17);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+ul li.item-menu {
+  transition: .2s;
+}
+
+ul li.ativo {
+  background-color: #007bff;
+}
+ul li.item-menu a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+  margin-left: 70px;
+    transition: .4s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .txt-link  {
+  margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>i {
+  font-size: 30px;
+  margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+/*===========fim===============*/
+
+
+
+/*-------------------------------------------*/
+
+
+
+/*-----tela login ----*/
+.contanier{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px 0 0 30px;
+      margin-top: 40px;
+
+}
+
+a {
+  margin-left: 2vh;
+}
+
+#tela-inicial {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+
+}
+
+.tela-login {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 0 0 50px;
+  
+
+}
+
+.tela-login form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+.tela-login input {
+  width: 40vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+}
+
+button[type="button"] {
+  background-color: #007bff;
+  color: #def7f4;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  width: 35vh;
+  border-radius: 5px;
+  margin-top: 1vh;
+  align-items: center;
+  text-align: center;
+  margin-left: 4vh;
+
+}
+
+
+/*----------------------fim--------------------- ----*/
+
+/* ------cadastro------------ */
+
+
+.cadastro {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 0 0 30px;
+  margin-top: 1vh;
+
+}
+
+.cadastro form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+.cadastro input {
+  width: 39vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cadastro button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  margin-left: 7vh;
+}
+
+/*-------------------fim------------------------------ ----*/
+
+
+
+
+
+/* ------Escolha-espoter------------ */
+
+
+.esporte {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0 0 3vh;
+  margin-top: 10vh;
+
+
+}
+
+.esporte img {
+  width: 10vh;
+  border-radius: 10px;
+  margin-bottom: -2vh;
+
+
+}
+
+#esporte-volei button {
+  background-color: #007bff;
+  color: #121111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  height: 30vh;
+  padding: 20vh 0 0 10vh;
+  margin-bottom: 8vh;
+  background-image: url(../img/volei.webp);
+  background-size: cover;
+}
+
+
+#esporte-tenis button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  height: 30vh;
+  padding: 20vh 0 0 10vh;
+  margin-bottom: 5vh;
+  background-image: url(../img/tenis.jpg);
+
+}
+
+/*---------------------------fim-----------------------------------*/
+
+
+
+/* -----Organização de Partidas de Vôlei ---- */
+
+.organizar-volei h3{
+  font-size: 13px;
+  
+}
+
+.organizar-volei {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0 1px;
+
+}
+
+.organizar-volei form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  padding: 0 0 0 3px;
+  margin-top: 20px;
+}
+
+.organizar-volei input {
+  background-color: none;
+  width: 36vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  margin-left: 40px;
+}
+
+.organizar-volei button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  margin-left: 7vh;
+}
+
+
+
+/*----------fim---------- ----*/
+
+
+
+/* ------Organização de Partidas de Tênis de Mesa ----------- */
+
+.organizar-tenis {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0 1px;
+}
+
+
+.organizar-tenis form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  padding: 0 0 0 3px;
+}
+
+.organizar-tenis input {
+  background-color: none;
+  width: 36vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  margin-left: 40px;
+}
+
+.organizar-tenis button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30vh;
+  margin-left: 7vh;
+}
+
+
+
+
+
+/*----------fim---------- ----*/
+@media only screen and (max-width: 600px) {
+
+  /* Estilos para telas menores que 600px */
+  button[type="button"] {
+    background-color: #ff7700;
+    color: #111212;
+    border: none;
+    cursor: pointer;
+    padding: 2px 1px 0 ;
+    margin-left: 10px;
+
+  }
+
+  .container-placar {
+    table-layout: 10px;
+
+
+  }
+
+  aside {
+    background-color: ;
+    /*grid-column: 3/4;*/
+    grid-area: a;
+    width: 600px;
+
+  }
+  a{
+    font-size:10px;
+    margin-left:3px;
+  }
+   p {
+       font-size: 10px;
+       margin-left: 10px;
+     }
+             h1{
+               font-size: 15px;
+               margin-left: 10px;
+             }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<link rel="stylesheet" type="text/css" href="../styles/estilo-paginas.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!--script-simula login-->
+<script src="../funcoes/login.js"defer></script>
+<!--script-menu lateral-->
+<script src="../funcoes/menu.js"defer></script>
+</head>
+
+<body>
+
+    <header id="header-menu">
+        <nav class="menu-lateral">
+            <div class="btn-expandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div> <!--btn--expandir-->
+            <ul>
+                <li class="item-menu ">
+                    <a href="../index.html">
+                        <span class="icone"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+
+                <li class="item-menu ativo">
+                    <a href="#">
+
+                        <span class="icone"><i class="bi bi-box-arrow-right"></i></span>
+                        <span class="txt-link">Login</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="../paginas/cadastro.html">
+                        <span class="icone"><i class="bi bi-nut"></i></span>
+                        <span class="txt-link">Cadastro</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+
+                        <span class="icone"><i class="bi bi-vignette"></i></span>
+                        <span class="txt-link">Nos</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icone"><i class="bi bi-clock-history"></i></span>
+                        <span class="txt-link">Historia</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+        <!-- Tela Inicial -->
+    <div class="contanier">
+        <div id="tela-inicial">
+            <h1>Bem-vindo ao Jogue Junto</h1>
+            <p>Organize partidas de vôlei e tênis de mesa com facilidade!</p>
+        </div>
+    
+        <!-- Tela de Login -->
+        <div class="tela-login">
+            <h2>Login</h2>
+            <form>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <a href="../paginas/cadastro.html">Não tem uma conta? Cadastre-se</a>
+                <button type="button" onclick="tipoLogin(); return false">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
