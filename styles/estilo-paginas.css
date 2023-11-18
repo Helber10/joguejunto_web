@@ -124,59 +124,48 @@ ul li.item-menu a .icon>i {
 
 }
 .contanier-login{
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
+     width: 100%;
+     height: 100%;
+     display: block;
+     background-color: #988c05;
+     position: relative;
+      margin: 0 auto
       align-items: center;
       padding: 2px 0 0 3px;
-      margin-top:100px ;
+      margin-top:100px;
+         
+
+}
+#texto {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
 
 }
 .contanier-login h1 ,p ,h2{
   color: #E0E2FF;
 }
-a {
-  margin-left: 2vh;
-}
-#tela-inicial {
-  width: 600px;
-  margin: 0 auto;
-  flex-direction: column;
-  margin-top: 150px;
-  padding: 2vh 0 0 3vh;
-  background-color:none;
-
-}
-
-#tela-inicial p ,h1{
-  color: #def7f4;
-  margin: 0 auto;
-  padding: 2vh 0 0 3vh;
-
-}
-
 .tela-login {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2px 0 0 50px;
-  
   margin-top: 10vh;
-}
-.form-login{
-  position: absolute;
-  background-color: #EDB900;
-  margin-top: 10vh;
-  align-items: center;
 }
 
-.tela-login form {
+.form-login {
+  width: 4%;
   position: relative;
-  margin:  auto;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+}
+
+.form-login form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%)
 }
 
 .tela-login input {
@@ -202,6 +191,28 @@ button[type="button"] {
   margin-left: 4vh;
 
 }
+a {
+  margin-left: 2vh;
+}
+#tela-inicial {
+  width: 600px;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 2vh 0 0 3vh;
+  background-color:none;
+
+}
+
+#tela-inicial p ,h1 ,h2{
+  color: #def7f4;
+  margin: 0 auto;
+  padding: 2vh 0 0 3vh;
+  align-items: center;
+
+}
+
+
 
 
 /*----------------------fim--------------------- ----*/
