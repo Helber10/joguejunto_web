@@ -119,7 +119,7 @@ ul li.item-menu a .icon>i {
   flex-direction: column;
   align-items: center;
   padding: 2px 0 0 3px;
-  margin-top: ;
+  margin-top: none;
 
 }
 
@@ -131,7 +131,7 @@ ul li.item-menu a .icon>i {
   height: 15vh;
   margin-top: 10vh;
   background-color: none;
-
+  
 
 }
 
@@ -142,17 +142,11 @@ ul li.item-menu a .icon>i {
   transform: translateY(-50%) translateX(-50%)
 }
 
-.contanier-login h1,p,h2 
-{
+.contanier-login h1,p,h2 {
   color: #E0E2FF;
 }
 
-.tela-login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%)
-}
+
 
 .login-h2 {
   position: absolute;
@@ -162,38 +156,38 @@ ul li.item-menu a .icon>i {
 }
 
 .form-login {
-  position: relative;
-  margin-bottom: auto;
+  max-width: 600px;
+  position: absolute;
   margin-top: 40vh;
   left: 50%;
   transform: translateY(-50%) translateX(-50%)
+  
 }
 
-.form-login form {
-  width: 70vh;
-  height: 70vh;
+.form-login >form {
+  max-width: 500px;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
+  margin-top: 50%;
+  border-radius: 10px;
   background-color: #EDB900;
-  border-radius: 15px;
-  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%)
 }
 
-.tela-login input {
-  position: absolute;
+.form-login input {
   width: 35vh;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 2vh;
-  align-items: center;
+  margin-bottom: 1vh;
+  margin-left: 10%;
+  margin-top: 2%;
 }
 
 button[type="button"] {
-  background-color: #EDB900;
+  background-color: #000551;
   color: #def7f4;
   border: none;
   cursor: pointer;
@@ -203,10 +197,12 @@ button[type="button"] {
   margin-top: 1vh;
   align-items: center;
   text-align: center;
-  margin-left: 4vh;
+  margin-left: 12%;
 
 }
+/*===========fim===============*/
 
+/*===========Home===============*/
 a {
   margin-left: 2vh;
 }
@@ -215,10 +211,16 @@ a {
   width: 600px;
   margin: 0 auto;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 100px;
   padding: 2vh 0 0 3vh;
   background-color: none;
 
+}
+.texto {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%)
 }
 
 #tela-inicial p,
@@ -236,16 +238,16 @@ h2 {
 
 /*----------------------fim--------------------- ----*/
 
-/* ------cadastro------------ */
+/* ------------------cadastro-------------------------*/
 
 
-.cadastro {
+.contanier-cadastro{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2px 0 0 30px;
-  margin-top: 1vh;
+  margin-top: 10vh;
 
 }
 
@@ -354,6 +356,17 @@ h2 {
   padding: 20px 0 0 1px;
 
 }
+.organizar-volei textarea{
+    background-color: none;
+    width: 36vh;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    margin-left: 40px;
+  
+}
 
 .organizar-volei form {
   margin: 0 auto;
@@ -376,6 +389,7 @@ h2 {
 }
 
 .organizar-volei button {
+  position: absolute;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -383,7 +397,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   width: 30vh;
-  margin-left: 7vh;
+  margin-left: 70px;
 }
 
 
@@ -393,6 +407,16 @@ h2 {
 
 
 /* ------Organização de Partidas de Tênis de Mesa ----------- */
+
+.contanier-tenis {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 0 0 30px;
+  margin-top: 10vh;
+
+}
 
 .organizar-tenis {
   margin: 0 auto;
@@ -409,6 +433,7 @@ h2 {
   flex-direction: column;
   margin-bottom: 5vh;
   padding: 0 0 0 3px;
+  margin-top: 20px;
 }
 
 .organizar-tenis input {
@@ -429,8 +454,7 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 30vh;
-  margin-left: 7vh;
+  margin-left: 70px;
 }
 
 
@@ -458,7 +482,7 @@ h2 {
   }
 
   aside {
-    background-color: ;
+    background-color: none;
     /*grid-column: 3/4;*/
     grid-area: a;
     width: 600px;
@@ -479,4 +503,47 @@ h2 {
     font-size: 15px;
     margin-left: 10px;
   }
+
+    
+        .contanier-login {
+          height: 1vh;
+          margin-top: 1vh;
+          margin-left: 9vh;
+          background-color: none;
+    
+    
+        }
+    
+        .form-login>form {
+          flex-direction: column;
+          position: relative;
+          margin-top: 50%;
+          border-radius: 10px;
+          background-color: #EDB900;
+        }
+    
+        .form-login input {
+          width: 30vh;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 1vh;
+          margin-left: 1%;
+          margin-top: 2%;
+        }
+    
+        button[type="button"] {
+          background-color: #000551;
+          color: #def7f4;
+          border: none;
+          cursor: pointer;
+          padding: 8px 10px;
+          width: 35vh;
+          border-radius: 5px;
+          margin-top: 1vh;
+          align-items: center;
+          text-align: center;
+          margin-left: 1%;
+    
+        }
 }
